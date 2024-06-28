@@ -23,7 +23,6 @@ const Login = () => {
 
   return (
     <>
-    
       <div>
         <img
           src={background}
@@ -32,13 +31,14 @@ const Login = () => {
             position: "fixed",
             top: 0,
             left: 0,
-            height: "100vh",
-            width: "100vw",
+            height: "100%",
+            width: "100%",
             zIndex: -1,
-            objectFit: "cover",
+            filter: "blur(5px)",
           }}
         />
       </div>
+
       <Box
         component="form"
         onSubmit={handleSubmit(onSubmit)}
