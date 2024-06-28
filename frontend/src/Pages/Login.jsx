@@ -1,15 +1,26 @@
 // import React from "react";
 import { useForm } from "react-hook-form";
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import background from "../assets/backgroundimage.jpeg";
-
+import { Link } from "react-router-dom";
 const Login = () => {
+  const styles = {
+    // Declare the 'styles' variable
+    navBtn: {
+      backgroundColor: "#EB370F", // Darker royal blue for button
+      color: "white",
+      padding: "0.5rem 3rem", // Adjust padding for button size
+      borderRadius: "5px", // Rounded corners for aesthetics
+      transition: "background-color 0.2s ease-in-out", // Smooth button hover effect
+    },
+  };
+
   const {
     register,
     handleSubmit,
@@ -101,15 +112,9 @@ const Login = () => {
           label="Remember Me"
           sx={{ mt: 1, textAlign: "left" }}
         />
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          fullWidth
-          sx={{ mt: 2 }}
-        >
+        <Link to="/dashboard" style={styles.navBtn}>
           Login
-        </Button>
+        </Link>
         <Box sx={{ mt: 2, textAlign: "center" }}>
           <Link href="#" variant="body2">
             Forgot Password?
