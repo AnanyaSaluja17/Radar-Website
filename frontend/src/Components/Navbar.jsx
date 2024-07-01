@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import { Link } from "react-router-dom";
-import thaparlogo from "../assets/TIET-Logo.png";
+import { Link } from "react-router-dom"
+import thaparlogo from "../assets/TIET-Logo.png"
 // import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
     navBtnHover: {
       backgroundColor: "#3f5baf", // Slightly darker blue on hover
     },
-  };
+  }
 
   return (
     <>
@@ -46,7 +46,7 @@ const Navbar = () => {
         <img
           src={thaparlogo}
           alt="logo"
-          style={{ width: "500px", height: "70px" }}
+          style={{ width: "20%", height: "70px" }}
         />
 
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -62,7 +62,7 @@ const Navbar = () => {
         </Link>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

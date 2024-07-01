@@ -1,5 +1,4 @@
-// BarChart.js
-// import React from "react"
+import React from "react"
 import { Bar } from "react-chartjs-2"
 import {
   Chart as ChartJS,
@@ -40,7 +39,25 @@ const Chart2 = () => {
     },
   }
 
-  return <Bar data={data} options={options} />
+  return (
+    <div
+      id="chart2"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "5rem 0",
+        width: "90%",
+        height: "400px", // decrease the height
+      }}
+    >
+      <div style={{ width: "100%", height: "100%",
+        margin: "5rem 25rem ",
+       }}>
+        <Bar data={data} options={options} />
+      </div>
+    </div>
+  )
 }
 
 export default Chart2

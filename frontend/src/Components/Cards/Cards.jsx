@@ -15,7 +15,7 @@ const Cards = () => {
     <>
       <div className="cards-container">
         <div className="card1">
-          <CCard style={{ width: "20rem" }}>
+          <CCard style={{ width: "20rem", borderRadius: "1rem" }}>
             <CCardImage orientation="top" src={ReactImg} />
             <CCardBody>
               <CCardTitle>Card 1</CCardTitle>
@@ -29,33 +29,33 @@ const Cards = () => {
             </CCardBody>
           </CCard>
         </div>
-        <div className="card2">
-          <CCard style={{ width: "20rem" }}>
+        <div className="card1">
+          <CCard style={{ width: "20rem", borderRadius: "1rem" }}>
             <CCardImage orientation="top" src={ReactImg} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Card 1</CCardTitle>
               <CCardText>
                 Some quick example text to build on the card title and make up
                 the bulk of the card content.
               </CCardText>
-              <CButton color="primary" href="#">
-                Go somewhere
-              </CButton>
+              <Link to="chart1" smooth={true} duration={500}>
+                <CButton color="primary">Go to Chart 1</CButton>
+              </Link>
             </CCardBody>
           </CCard>
         </div>
-        <div className="card3">
-          <CCard style={{ width: "20rem" }}>
+        <div className="card1">
+          <CCard style={{ width: "20rem", borderRadius: "1rem" }}>
             <CCardImage orientation="top" src={ReactImg} />
             <CCardBody>
-              <CCardTitle>Card title</CCardTitle>
+              <CCardTitle>Card 1</CCardTitle>
               <CCardText>
                 Some quick example text to build on the card title and make up
                 the bulk of the card content.
               </CCardText>
-              <CButton color="primary" href="#">
-                Go somewhere
-              </CButton>
+              <Link to="chart1" smooth={true} duration={500}>
+                <CButton color="primary">Go to Chart 1</CButton>
+              </Link>
             </CCardBody>
           </CCard>
         </div>
