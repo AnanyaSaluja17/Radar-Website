@@ -21,12 +21,12 @@ const Chart1 = () => {
   const options = {
     theme: "light2",
     title: {
-      text: "Max speed of cars in 2014",
+      text: "Max speed of cars",
     },
     data: [
       {
         type: "line",
-        xValueFormatString: "MMM YYYY",
+        xValueFormatString: "DD MMM YYYY",
         yValueFormatString: "#,##0.00",
         dataPoints: dataPoints,
         color: "#ab4e52", // setting the line color to maroon
@@ -35,10 +35,7 @@ const Chart1 = () => {
   }
 
   return (
-    <div
-      id="chart1"
-  
-    >
+    <div id="chart1">
       {" "}
       {/* This id is used for scrolling */}
       <CanvasJSChart options={options} />
